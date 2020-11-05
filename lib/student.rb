@@ -17,7 +17,7 @@ class Student
     sql = <<-SQL 
     CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, grade TEXT)
     SQL 
-    DB[:conn]
+    DB[:conn].execute(sql)
   end
   
   # Remember, you can access your database connection anywhere in this class
