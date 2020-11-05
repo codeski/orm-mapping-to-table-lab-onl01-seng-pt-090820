@@ -36,4 +36,5 @@ class Student
     INSERT INTO students (name, grade) Values ( ?, ?), name, grade
     SQL
     DB[:conn].execute(sql)
+  end
 end
